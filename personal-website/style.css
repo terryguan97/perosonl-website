@@ -1,0 +1,470 @@
+/*
+Theme Name: Project 1
+Author: Terry
+Author URI: http://art.buffalo.edu/art320/
+Description: This is a theme created for Exercise 4.
+Version: 1.0
+*/
+
+@charset "UTF-8";
+
+canvas {
+	width:100%;
+	-webkit-animation: fadein 4s;
+	-moz-animation: fadein 4s; 
+	-ms-animation: fadein 4s; 
+	-o-animation: fadein 4s; 
+	animation: fadein 4s;
+	margin: 0px;
+}
+#wrapper {
+	width: 100%;
+	height: 100%;
+	margin:0px;
+}
+body {
+	background-color:black;
+	text-align: left;
+	font-family: 11px/1.1em 'Major Mono Display';
+	margin: 0 0;
+}
+
+main {
+	width: 100%;
+}
+
+header {
+	width: 100%;
+	position: absolute;
+}
+.alignright {
+	float: right;
+	width: 25%;
+	height: 70%;
+	position: fixed;
+	top:35vh;
+	right:5vh;
+	z-index: -1;
+}
+
+#workbody {
+	float: left; 
+	padding-left: 100px;
+	color: white; 
+	font-size: 25px; 
+	font-family: 'Major Mono Display';
+}
+
+#ow {
+	text-decoration: underline;
+}
+
+#workbody a {
+	text-decoration: none; 
+	color: white;
+
+
+}
+
+body header div a img{
+	width: 200px;
+	height:90px;
+	margin: 5px 0px 0px 10px;
+}
+
+#post-64 {
+	visibility: hidden;
+}
+
+#logodiv {
+	float:left;
+	width: 100%;
+	position:relative;
+	margin: 10px 0 0 10px;
+}
+
+#header-wrapper {
+	width:100%;
+	position: relative;
+	display: flex;
+	z-index: 1;
+}
+
+nav{
+	position: relative;
+	color:white;
+	font-size:25px;
+	text-decoration: none;
+	list-style: none; 
+
+}
+
+.image{
+	padding-top: 5px;
+	float:right;
+	width: 50px;
+	height:50px;
+	pointer-events: none;
+}
+nav ul {
+	color:white;
+	font-size:25px;
+	padding-right:15px;
+	text-decoration: none;
+	list-style: none; 
+	display:flex;
+}
+nav ul li {
+	font-family: 'Major Mono Display', monospace;
+	color:white;
+	font-size:25px;
+	padding-right:15px;
+	text-decoration: none;
+	list-style: none; 
+}
+nav ul li:last-child {
+	padding-right: 0;
+}
+
+nav ul li a:visited{
+	text-decoration: none;
+	list-style: none;
+}
+
+nav ul li a:hover {
+	color: goldenrod;
+}
+
+nav ul li a{
+	text-decoration: none;
+	list-style: none;
+	color:white;
+}
+
+section {
+	width: 100%;
+
+
+}
+#whoiam{
+	font-family: 'Major Mono Display', sans-serif;
+	font-weight:500;
+	color:white;
+	font-size:35px;
+}
+
+/*hr {
+	width: 200px;
+	padding-right:200px;
+}
+*/
+#bio{
+	font-family: 'Space Mono', monospace;
+	color:white;
+	font-size:20px;
+	float:left;
+	line-height: 20px;
+	height:260px;
+	width:450px;
+	position: relative;
+	top:200px;
+	left:22%;
+}
+
+#bio p 
+{
+	word-spacing: 2px;
+}
+
+
+
+#largeimg{ 
+	float:right;
+	width:684px;
+	pointer-events: none;
+	position: static;
+
+}
+
+#fade {
+	-webkit-animation: fadein 2s;
+	-moz-animation: fadein 2s; 
+	-ms-animation: fadein 2s; 
+	-o-animation: fadein 2s; 
+	animation: fadein 2s;
+}
+
+.delet	{
+	display: block;
+}
+
+.projectSection1 {
+	background-position: center;
+	z-index: 1;
+    background-size: cover;
+    position: relative;
+    height: 95vh;
+	width: 100%;
+	box-sizing: border-box;
+
+}
+
+.projectSection2 {
+	width: 100%;
+    background-color: rgb(0, 0, 0);
+    z-index: 1;
+	height: 54vw;
+	position: absolute;
+	text-align: center;
+	box-sizing: border-box;
+
+}
+.section2Left {
+	width: 50%;
+    background-color: #79c8a8;
+	height: 54vw;
+	position: absolute;
+	box-sizing: border-box;
+}
+.section2Right {
+	width: 50%;
+    background-color: rgb(0, 0, 0);
+	height: 54vw;
+	box-sizing: border-box;
+	margin-left: 50%;
+	position: absolute	
+}
+
+
+#videoOverlay{
+	width: 100%;
+    opacity: 1;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+	height: 95vh;
+	pointer-events: none;
+
+}
+#rainFrame {
+	width: 100%;
+	height:95vh;
+	border: none;
+	z-index: -10000000;
+}
+
+.about {
+	width: 100%;
+	position: relative;
+	height: 25vw;
+	box-sizing: border-box;
+	background-color: #312d5f;
+}
+
+.about h1 {
+	font-size: 50px;
+	font-family: 'Lexend Zetta';
+	color: #ffffff;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 50px;
+
+
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 2px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+	background: black; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+	background: #555; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+	background: white; 
+  }
+
+@keyframes fadein {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+/*======================= Media Query CSS ================================ */
+
+@media screen and (max-width:517px) {
+	nav {
+		float:none;
+		font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+		color:white;
+		font-size:20px;
+		text-decoration: none;
+		list-style: none; 
+		padding-right:20%;
+
+	}
+
+	#logodiv {
+		float:right;
+		padding-right:30%;
+
+	}
+
+	#bio {
+		left:40px;
+		top:550px;
+		padding-bottom: 30px;
+		position: absolute;
+
+	}
+
+	.alignright {
+		top:175px;
+		left:5px;
+		position: absolute;
+		z-index: -1;
+
+	}
+	canvas,section {
+		top: 170px;
+	}
+
+
+}
+@media screen and (max-width:1700px) {
+	.delet {
+		display: none;	}
+	}
+
+/*======================= Project Page CSS ================================ */
+
+.hero-overlay {
+    background-color: black;
+    opacity: 60%;
+}
+
+.hero-image {
+    height: 100vh;
+}
+.hero-text {
+    margin: 0 auto;
+    position: absolute;
+    width: 100%;   
+    margin: 40vh 0;
+    z-index: 2;
+}
+
+.hero-container {
+	pointer-events: none;
+}
+
+.hero-title {
+    color: white;
+    font-size: 7rem;
+    text-align: center;
+    margin: 0;
+    font-family: 'Major Mono Display';
+    background-color: black;
+    padding: 10px 0;
+}
+
+.hero-subtitle {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin: 2vh 0 0 0;
+    font-family: 'Josefin Slab', serif;
+    letter-spacing: 8px;
+}
+
+.hero-logo {
+    text-align: center;
+    margin-top: 1.5vh;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100vh;
+}
+
+.content-section {
+    height: 75vh;
+    width: 80%;
+    margin: 0 10%;
+    display: flex;
+}
+
+.sub-section-left, .sub-section-right {
+    width: 50%;
+    margin: 10vh 0;
+}
+
+.sub-section-left img {
+    object-fit: cover;
+    width: 100%;
+    margin: -20px 0px 20px 20px;
+}
+
+.sub-section-right img {
+    object-fit: cover;
+    width: 100%;
+    margin: -20px 0px 20px -20px;
+}
+ 
+.background-box {
+    background-color: darkgrey;
+}
+
+.section-text-box {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.section-text-box h1 {
+    color: goldenrod;
+    margin: 0 0 10px 0;
+    font-size: 1.35vw;
+    font-family: 'Major Mono Display';
+}
+
+.section-text-box p {
+    color: white;
+    font-family: 'Josefin Slab', serif;
+    font-weight: 900;
+    font-size: 1vw;
+}
+/*============== AOS CSS =================*/
+body[data-aos-duration="400"] [data-aos]{
+	transition-duration: .8s !important;
+}
+
